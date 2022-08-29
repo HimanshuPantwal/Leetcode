@@ -1,8 +1,8 @@
 class Solution {
 public:
     vector<int> twoOutOfThree(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3) {
-        unordered_map< int,int > mpp1,mpp2,mpp3;
-        unordered_set< int > st;
+        map< int,int > mpp1,mpp2,mpp3;
+        set< int > st;
         for(auto n:nums1)mpp1[n]+=1;
         for(auto n:nums2)mpp2[n]+=1;
         for(auto n:nums3)mpp3[n]+=1;
