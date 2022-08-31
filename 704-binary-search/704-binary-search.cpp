@@ -21,7 +21,6 @@ public:
            return binary(nums,mid+1,high,target);
     }
     int search(vector<int>& nums, int target) {
-        int x=binary(nums,0,nums.size()-1,target);
-        return x;
+        return binary(nums,0,nums.size()-1,target);
     }
 };
