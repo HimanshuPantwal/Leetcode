@@ -6,7 +6,8 @@ public:
         while(low<=high)
         {
             int mid=low+(high-low)/2;
-            if(mid-1>=0 && mid+1<arr.size() &&arr[mid-1]<arr[mid] && arr[mid+1]<arr[mid]){
+            if(mid-1>=0 && mid+1<arr.size() &&arr[mid-1]<arr[mid] && arr[mid+1]<arr[mid])
+            {
                 return mid;
             }
             else 
