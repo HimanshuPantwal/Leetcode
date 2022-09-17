@@ -1,18 +1,11 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        map<int,int> a;
-        
-        for(auto x: nums)
-		   a[x]++;
-        
-        for(auto i:a)
+        int xr=0;
+        for(int i=0;i<nums.size();i++)
         {
-            if(i.second==1)
-            {
-                return i.first;
-            }
-         }
-       return -1;
+            xr^=nums[i];
+        }
+        return xr;
     }
 };
