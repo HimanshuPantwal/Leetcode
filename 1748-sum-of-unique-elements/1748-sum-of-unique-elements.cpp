@@ -7,11 +7,11 @@ public:
             m[nums[i]]++;
         }
         int sum=0;
-        for(auto i=m.begin();i!=m.end();i++)
+        for(auto i:m)
         {
-             if(i->second==1)
+             if(i.second==1)
              {
-                 sum+=i->first;
+                 sum+=i.first;
              }
         }
         return sum;
