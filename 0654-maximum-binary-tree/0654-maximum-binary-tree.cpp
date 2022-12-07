@@ -29,14 +29,8 @@ public:
             }
         }
         TreeNode*  root=new TreeNode(max);
-        if(index-1>=0)
-        {
-        root->left=find(nums,low,index-1);
-        }
-        if(index+1<nums.size())
-        {
+         root->left=find(nums,low,index-1);
          root->right=find(nums,index+1,high);
-        }
         return root;
     }
     TreeNode* constructMaximumBinaryTree(vector<int>& nums) {
